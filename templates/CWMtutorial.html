@@ -1,0 +1,66 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>CWM</title>
+   
+    <!-- Custom CSS -->
+    <link href="{% static "css/tutorial.css" %}" rel="stylesheet">
+
+</head>
+<body>
+<div class="main">
+<div class="sidebar">
+	<ul>
+		<li><a href='{% url "home" %}'>Info</a></li>
+		<li><a href='{% url "tutorial" %}'>Tutorial</a></li>
+		<li><a href='{% url "training" %}'>Training</a></li>
+	</ul>
+</div>
+<div class="center">
+<h1>Complex working memory.(Tutorial)</h1>
+<h2>Overview</h2>
+	<p id="demo">The CWM exercise consists of the remembering rounds and the recall stage. The number of the rounds in an exercise equals to the current level of the CWM exercise.</p>
+	<p>Every round in the CWM exercise consists of two parts: the <b>Decision</b> making part at the beginning and the <b>Remembering</b> part at the end.</p>
+	<p>There are usually 4 Decision tasks in one round that are followed by an item to Remember. So, for example, it the exercise level is 5 you'll have to remember 5 items in total.</p>
+	<p>After all rounds passed there is a <b>Recall</b> stage where you have to recall all the remembered items.</p>
+	<p>There are two types of the CWM Span Task:</p>
+		<ul>
+			<li>Spatial CWM</li>
+			<li>Verbal CWM</li>
+		</ul> 
+	<p>The Decision and Remembering/Recall parts of the exercise are different for each type.</p>
+
+<h2>Spatial CWM</h2>
+	<p>On the Decision stage of the Spatial CWM you'll have to make a decision whether the displayed figure is symmetric on the Y axis. (Symmetric means its left part is its mirrored reflection of the right part)</p>
+	<p>Examples:</p>
+	<div class="image">
+	<img src="cwm-cymmetric.gif" alt="Cymmetric Image" style="width:200;height:200">
+	<div class="desc"><b>Symmetric Figure</b></div>
+	</div>
+	<div class="image">
+
+	<img src="cwm-non-cymmetric.gif" alt="Non-Symmetric Image" style="width:200;height:200">
+	<div class="desc"><b>Non-Symmetric Figure</b></div></div>
+	<p>If the figure is symmetric press the <strong>Yes</strong> button (or correspondent key on the keyboard). If not symmetric - press <strong>No</strong>.</p>
+	<p>On the Remembering stage of the Spatial CWM you are shown the grid with one filled cell. Remember the cell position on every round.</p>
+	<p>On the Recall stage you have to recall the positions of cells in the order they appeared (by clicking the cells in the grid).</p>
+
+<h2>Verbal CWM</h2>
+	<p>On the Decision stage of the Verbal CWM you'll have to make a decision whether the displayed characters form the correct word.</p>
+	<p>If the word is spelled correctly press the <strong>Yes</strong> button (or correspondent key on the keyboard). If not - press <strong>No</strong>.</p>
+	<p>On the Remembering stage of the Verbal CWM you are shown the alphabet letter. Remember the letter on every round.</p>
+	<p>On the Recall stage you have to recall the letters in the order they appeared (by clicking the cells in the grid).<p>
+</div>
+</div>
+<script>
+
+</script>
+</body>
+</html>

@@ -1,0 +1,53 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+<head>
+
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+<link href="{% static 'css/training.css' %}" rel="stylesheet">
+<script src="{% static 'js/jvs.js' %}"></script> 
+
+</head>
+<body>
+	<div class="main">
+		<div class="sidebar">
+			<ul>
+				<li><a href='{% url "home" %}'>Info</a></li>
+				<li><a href='{% url "tutorial" %}'>Tutorial</a></li>
+				<li><a href='{% url "training" %}'>Training</a></li>
+			</ul>
+		</div> 
+
+		<div class = "center">
+			<h1>CWM Training Demo Mode</h1>
+
+			<div id ="screen1" class = "cwmgame">
+				<p id = "leer" class = "letter"></p>
+			</div>
+			<div id = "screen2" class = "cwmgame">
+				<p id = "words" class = "letter"><p>
+				<button id="b1" type="button" onclick="click_handler(1)">YES</button>
+				<button id="b2" type="button" onclick="click_handler(2)"> NO</button>
+			</div>
+			<div id = "screen4" class = "cwmgame">
+			
+			</div>
+			<div id = "screen3" class = "cwmgame">
+				<p id = "result_words" class = "letter">Result</p>
+				<p id = "result_letter" class = "letter"></p>
+			</div>
+			
+			<p>Four decision tasks are followed by an item to remember</p>
+			<p id = "rad2">Press the spacebar to start the exercise.</p>
+			
+			<div id = "start_screen_background" class = "gamebackground">
+					<p id="rad"></p>
+				<div id = "start_screen" class = "cwmgame">
+					<button id="start_button" type="button" onclick="start_game(showletters)" class = "ingame">Click to Start the game.</button>
+				</div>
+			</div>
+
+	</div>
+
+</body>
+</html>

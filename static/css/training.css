@@ -1,0 +1,105 @@
+
+h1 {
+    text-align: center;
+	color:#377AA6;
+}
+body {
+    background-color: #343A3D;
+}
+
+.center {
+    margin-left: auto;
+    margin-right: auto;
+    width: 70%;
+    background-color: white;
+	border: 1px solid #a1a1a1;
+    padding: 10px 40px; 
+}
+div.center p {
+	text-align : center;
+}
+.sidebar{
+	display:block;
+	width:100px;
+	float:left;
+}
+#canvasc {
+	margin-left: 130px;
+	margin-right: auto;
+	
+}
+div.sidebar ul {
+	list-style-type: none;
+	margin: 10px;
+	padding: 10px;
+}
+div.sidebar a:link, div.sidebar a:visited {
+    display: block;
+    font-weight: bold;
+    color: black;
+    background-color: #E8E8E8 ;
+    width: 120px;
+    text-align: center;
+    padding: 4px;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+div.sidebar a:hover,  div.sidebar a:active {
+    background-color: #A0A0A0;
+	}
+	.main{
+	background-color:#f0f3f5;
+	margin-left:25px;
+	margin-right:25px;
+	border-radius:20px;
+}
+.gamebackground {
+	background-color: lightgrey;
+	width:800px;
+	height:500px;
+	margin-left: auto;
+	margin-right:auto;
+}
+.cwmgame {
+	position:relative;
+	background-color: white;
+	margin-left: auto;
+	margin-right:auto;
+	width:600px;
+	height:400px;
+	color:black;
+	top:50px;
+ }
+ .letter {
+	font-size:75px;
+	color:brown;
+	text-align: center;
+	padding-top:125px;
+ }
+ .ingame { 
+	position:relative;
+	top:200px;
+	left:225px;
+ }
+ 
+ #table1 {
+	color:blue;
+	position : relative;
+	top:140px;
+	left:200px;
+	width:30%;
+	height:30%;
+ }
+ #table1, td, th{
+	border-collapse:collapse;
+	border:1px solid black;
+	text-align:center;
+	padding:15px;
+ }
+ td:hover {
+	background-color:lightgreen;
+ }
+ td:visited {
+	background-color:green;
+ }
